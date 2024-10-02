@@ -49,6 +49,7 @@ CREATE TABLE supermarket_sales (
 
 
 
+
 COPY supermarket_sales FROM 'C:\Users\Martin\Desktop\Courses\Projects\Supermarket Sales Analysis\SuperMarket Analysis.csv' DELIMITER ',' CSV HEADER;
 
 /*markdown
