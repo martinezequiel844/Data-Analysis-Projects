@@ -1,0 +1,1432 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20242.24.0910.0334                               -->
+<workbook original-version='18.1' source-build='2024.2.3 (20242.24.0910.0334)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='EV_Dataset' inline='true' name='federated.185s98y0syth9z17ftlv60o01ni9' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='EV_Dataset' name='textscan.175v3e11xwuvmk16mtaap1njhp4a'>
+            <connection class='textscan' directory='C:/Users/Martin/Desktop/Projects/India EV Analysis' filename='EV_Dataset.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.175v3e11xwuvmk16mtaap1njhp4a' name='EV_Dataset.csv' table='[EV_Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='Year' ordinal='0' />
+            <column datatype='string' name='Month_Name' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='string' name='State' ordinal='3' />
+            <column datatype='string' name='Vehicle_Class' ordinal='4' />
+            <column datatype='string' name='Vehicle_Category' ordinal='5' />
+            <column datatype='string' name='Vehicle_Type' ordinal='6' />
+            <column datatype='real' name='EV_Sales_Quantity' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.175v3e11xwuvmk16mtaap1njhp4a' name='EV_Dataset.csv' table='[EV_Dataset#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='real' name='Year' ordinal='0' />
+            <column datatype='string' name='Month_Name' ordinal='1' />
+            <column datatype='date' name='Date' ordinal='2' />
+            <column datatype='string' name='State' ordinal='3' />
+            <column datatype='string' name='Vehicle_Class' ordinal='4' />
+            <column datatype='string' name='Vehicle_Category' ordinal='5' />
+            <column datatype='string' name='Vehicle_Type' ordinal='6' />
+            <column datatype='real' name='EV_Sales_Quantity' ordinal='7' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[EV_Dataset.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[EV_Dataset.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Month_Name</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Month_Name]</local-name>
+            <parent-name>[EV_Dataset.csv]</parent-name>
+            <remote-alias>Month_Name</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[EV_Dataset.csv]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[EV_Dataset.csv]</parent-name>
+            <remote-alias>State</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Class</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle_Class]</local-name>
+            <parent-name>[EV_Dataset.csv]</parent-name>
+            <remote-alias>Vehicle_Class</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Category</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle_Category]</local-name>
+            <parent-name>[EV_Dataset.csv]</parent-name>
+            <remote-alias>Vehicle_Category</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Vehicle_Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Vehicle_Type]</local-name>
+            <parent-name>[EV_Dataset.csv]</parent-name>
+            <remote-alias>Vehicle_Type</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>EV_Sales_Quantity</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[EV_Sales_Quantity]</local-name>
+            <parent-name>[EV_Dataset.csv]</parent-name>
+            <remote-alias>EV_Sales_Quantity</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+      <column caption='EV Sales Quantity' datatype='real' name='[EV_Sales_Quantity]' role='measure' type='quantitative' />
+      <column caption='Month Name' datatype='string' name='[Month_Name]' role='dimension' type='nominal' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+        <semantic-values semantic-role='[State].[Name]'>
+          <semantic-value key='&quot;Andaman &amp; Nicobar Island&quot;' value='&quot;Andaman &amp; Nicobar Islands&quot;' />
+          <semantic-value key='&quot;DNH and DD&quot;' value='&quot;Dadra and Nagar Haveli and Daman and Diu&quot;' />
+        </semantic-values>
+      </column>
+      <column caption='Vehicle Category' datatype='string' name='[Vehicle_Category]' role='dimension' type='nominal' />
+      <column caption='Vehicle Class' datatype='string' name='[Vehicle_Class]' role='dimension' type='nominal' />
+      <column caption='Vehicle Type' datatype='string' name='[Vehicle_Type]' role='dimension' type='nominal' />
+      <column datatype='real' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='EV_Dataset.csv' datatype='table' name='[__tableau_internal_object_id__].[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]' role='measure' type='quantitative' />
+      <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Vehicle_Class]' derivation='None' name='[none:Vehicle_Class:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Vehicle_Type]' derivation='None' name='[none:Vehicle_Type:nk]' pivot='key' type='nominal' />
+      <group caption='Action (Vehicle Class)' hidden='true' name='[Action (Vehicle Class)]' name-style='unqualified' user:auto-column='sheet_link'>
+        <groupfilter function='crossjoin'>
+          <groupfilter function='level-members' level='[Vehicle_Class]' />
+        </groupfilter>
+      </group>
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_US' class='hyper' dbname='C:/Users/Martin/AppData/Local/Temp/TableauTemp/#TableauTemp_12qbtll071fo1j19w20qa02a2wrp.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='10/24/2024 11:21:48 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>Year</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[Year]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Year</remote-alias>
+              <ordinal>0</ordinal>
+              <family>EV_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Month_Name</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Month_Name]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Month_Name</remote-alias>
+              <ordinal>1</ordinal>
+              <family>EV_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Date</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[Date]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Date</remote-alias>
+              <ordinal>2</ordinal>
+              <family>EV_Dataset.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>121</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>State</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[State]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>State</remote-alias>
+              <ordinal>3</ordinal>
+              <family>EV_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>34</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle_Class</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle_Class]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle_Class</remote-alias>
+              <ordinal>4</ordinal>
+              <family>EV_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>111</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle_Category</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle_Category]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle_Category</remote-alias>
+              <ordinal>5</ordinal>
+              <family>EV_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Vehicle_Type</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[Vehicle_Type]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Vehicle_Type</remote-alias>
+              <ordinal>6</ordinal>
+              <family>EV_Dataset.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>EV_Sales_Quantity</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[EV_Sales_Quantity]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>EV_Sales_Quantity</remote-alias>
+              <ordinal>7</ordinal>
+              <family>EV_Dataset.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>828</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Vehicle_Class:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;E-RICKSHAW WITH CART (G)&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;MOTOR CAB&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;MOPED&quot;</bucket>
+            </map>
+            <map to='#9c755f'>
+              <bucket>&quot;THREE WHEELER (GOODS)&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;MOTOR CYCLE/SCOOTER-USED FOR HIRE&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;THREE WHEELER (PASSENGER)&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;M-CYCLE/SCOOTER&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;MOTOR CAR&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;E-RICKSHAW(P)&quot;</bucket>
+            </map>
+            <map to='#ff9da7'>
+              <bucket>&quot;MOTORISED CYCLE (CC &gt; 25CC)&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Forecast Indicator:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;Actual&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;Estimate&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:Vehicle_Type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;Others&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;2W_Personal&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;3W_Shared&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;Bus&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;3W_Goods&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;3W_Shared_LowSpeed&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;4W_Shared&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;3W_Personal&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;2W_Shared&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;4W_Personal&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;3W_Goods_LowSpeed&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+        <semantic-value key='[State].[Name]' value='%null%' />
+      </semantic-values>
+      <default-sorts>
+        <manual-sort column='[none:Forecast Indicator:nk]' direction='ASC'>
+          <dictionary>
+            <bucket>&quot;Actual&quot;</bucket>
+            <bucket>&quot;Estimate&quot;</bucket>
+          </dictionary>
+        </manual-sort>
+      </default-sorts>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='EV_Dataset.csv' id='EV_Dataset.csv_E00D429523EB4A329C1F572CBE56D675'>
+            <properties context=''>
+              <relation connection='textscan.175v3e11xwuvmk16mtaap1njhp4a' name='EV_Dataset.csv' table='[EV_Dataset#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='real' name='Year' ordinal='0' />
+                  <column datatype='string' name='Month_Name' ordinal='1' />
+                  <column datatype='date' name='Date' ordinal='2' />
+                  <column datatype='string' name='State' ordinal='3' />
+                  <column datatype='string' name='Vehicle_Class' ordinal='4' />
+                  <column datatype='string' name='Vehicle_Category' ordinal='5' />
+                  <column datatype='string' name='Vehicle_Type' ordinal='6' />
+                  <column datatype='real' name='EV_Sales_Quantity' ordinal='7' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <actions>
+    <action caption='Filter 1 (generated)' name='[Action1_532385446C484FE281339E1CE59BA329]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Class Sold' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 2 (generated)' name='[Action2_2C356D88EDE748998DD8A1363835CD6B]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Sales map' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 3 (generated)' name='[Action3_05D2F93F7E194099A5F778EC3388B3D1]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Type Sold' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+    <action caption='Filter 4 (generated)' name='[Action4_FF9929696ACD4E629CB241D10F0566A2]'>
+      <activation auto-clear='true' type='on-select' />
+      <source dashboard='Dashboard 1' type='sheet' worksheet='Category Sold' />
+      <command command='tsc:tsl-filter'>
+        <param name='special-fields' value='all' />
+        <param name='target' value='Dashboard 1' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='Category Sold'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Category Sales</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EV_Dataset' name='federated.185s98y0syth9z17ftlv60o01ni9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185s98y0syth9z17ftlv60o01ni9'>
+            <column caption='EV Sales Quantity' datatype='real' name='[EV_Sales_Quantity]' role='measure' type='quantitative' />
+            <column caption='Vehicle Category' datatype='string' name='[Vehicle_Category]' role='dimension' type='nominal' />
+            <column caption='Vehicle Class' datatype='string' name='[Vehicle_Class]' role='dimension' type='nominal' />
+            <column-instance column='[Vehicle_Category]' derivation='None' name='[none:Vehicle_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Vehicle_Class]' derivation='None' name='[none:Vehicle_Class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EV_Sales_Quantity]' derivation='Sum' name='[sum:EV_Sales_Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.185s98y0syth9z17ftlv60o01ni9].[Action (Vehicle Class)]'>
+            <groupfilter function='level-members' level='[Vehicle_Class]' user:ui-action-filter='[Action1_532385446C484FE281339E1CE59BA329]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Class:nk]'>
+            <groupfilter function='level-members' level='[none:Vehicle_Class:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Category:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' shelf='rows' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Class:nk]</column>
+            <column>[federated.185s98y0syth9z17ftlv60o01ni9].[Action (Vehicle Class)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' field-type='quantitative' major-origin='0.0' major-show='false' major-spacing='1000000.0' minor-origin='0.0' minor-show='false' minor-spacing='100000.0' scope='cols' type='space' />
+            <format attr='auto-subtitle' class='0' field='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' scope='cols' value='true' />
+            <format attr='title' class='0' field='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' scope='cols' value='' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='height' field='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Category:nk]' value='21' />
+            <format attr='font-size' field='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' value='10' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Category:nk]' value='88' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+            <format attr='display-field-labels' scope='rows' value='false' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+              <text column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='348' />
+                <format attr='maxwidth' value='348' />
+                <format attr='minheight' value='100' />
+                <format attr='maxheight' value='100' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Category:nk]</rows>
+        <cols>[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]</cols>
+      </table>
+      <simple-id uuid='{69F20033-A602-4096-9E7A-56B228C72DCE}' />
+    </worksheet>
+    <worksheet name='Class Sold'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EV_Dataset' name='federated.185s98y0syth9z17ftlv60o01ni9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185s98y0syth9z17ftlv60o01ni9'>
+            <column caption='EV Sales Quantity' datatype='real' name='[EV_Sales_Quantity]' role='measure' type='quantitative' />
+            <column caption='Vehicle Class' datatype='string' name='[Vehicle_Class]' role='dimension' type='nominal' />
+            <column-instance column='[Vehicle_Class]' derivation='None' name='[none:Vehicle_Class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EV_Sales_Quantity]' derivation='Sum' name='[sum:EV_Sales_Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Class:nk]'>
+            <groupfilter expression='SUM([EV_Sales_Quantity]) &gt; 10000.' function='filter' user:ui-filter-by-field='true' user:ui-marker='filter-by'>
+              <groupfilter function='level-members' level='[none:Vehicle_Class:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Class:nk]' direction='DESC' using='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+          <slices>
+            <column>[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Class:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Class:nk]' value='280' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+              <text column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Class:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{E39985A1-94CA-4C17-B42E-15062E2468C5}' />
+    </worksheet>
+    <worksheet name='Sales Forecast'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EV_Dataset' name='federated.185s98y0syth9z17ftlv60o01ni9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185s98y0syth9z17ftlv60o01ni9'>
+            <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+            <column caption='EV Sales Quantity' datatype='real' name='[EV_Sales_Quantity]' role='measure' type='quantitative' />
+            <column-instance column='[EV_Sales_Quantity]' derivation='Sum' forecast-column-base='[sum:EV_Sales_Quantity:qk]' forecast-column-type='forecast-value' name='[fVal:sum:EV_Sales_Quantity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Forecast Indicator]' derivation='None' forecast-column-base='[Forecast Indicator]' forecast-column-type='forecast-indicator' name='[none:Forecast Indicator:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EV_Sales_Quantity]' derivation='Sum' name='[sum:EV_Sales_Quantity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' value='0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Forecast Indicator:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1126' />
+                <format attr='maxwidth' value='1126' />
+                <format attr='minheight' value='425' />
+                <format attr='maxheight' value='425' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.185s98y0syth9z17ftlv60o01ni9].[fVal:sum:EV_Sales_Quantity:qk]</rows>
+        <cols>[federated.185s98y0syth9z17ftlv60o01ni9].[tmn:Date:qk]</cols>
+        <forecast-specification auto-forecast-agg='true' band-confidence-level='95.000000' enabled='true' fill-type='fill-zero' ignore-last='0' model-type='auto-season' range-type='auto' show-prediction-bands='true' />
+      </table>
+      <simple-id uuid='{9C72FC5F-3279-425A-A080-07F63647688F}' />
+    </worksheet>
+    <worksheet name='Sales category'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EV_Dataset' name='federated.185s98y0syth9z17ftlv60o01ni9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185s98y0syth9z17ftlv60o01ni9'>
+            <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+            <column caption='EV Sales Quantity' datatype='real' name='[EV_Sales_Quantity]' role='measure' type='quantitative' />
+            <column caption='Vehicle Category' datatype='string' name='[Vehicle_Category]' role='dimension' type='nominal' />
+            <column-instance column='[Vehicle_Category]' derivation='None' name='[none:Vehicle_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EV_Sales_Quantity]' derivation='Sum' name='[sum:EV_Sales_Quantity:vtsum:qk]' pivot='key' type='quantitative' visual-totals='Sum' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Area' />
+            <encodings>
+              <color column='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Category:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='1187' />
+                <format attr='maxwidth' value='1187' />
+                <format attr='minheight' value='411' />
+                <format attr='maxheight' value='411' />
+                <format attr='aspect' value='0' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:vtsum:qk]</rows>
+        <cols total='true'>[federated.185s98y0syth9z17ftlv60o01ni9].[tmn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{99F63A5C-7444-4390-8262-1B9B72B3FC58}' />
+    </worksheet>
+    <worksheet name='Sales map'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EV_Dataset' name='federated.185s98y0syth9z17ftlv60o01ni9' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.185s98y0syth9z17ftlv60o01ni9'>
+            <column caption='EV Sales Quantity' datatype='real' name='[EV_Sales_Quantity]' role='measure' type='quantitative' />
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+              <semantic-values semantic-role='[State].[Name]'>
+                <semantic-value key='&quot;Andaman &amp; Nicobar Island&quot;' value='&quot;Andaman &amp; Nicobar Islands&quot;' />
+                <semantic-value key='&quot;DNH and DD&quot;' value='&quot;Dadra and Nagar Haveli and Daman and Diu&quot;' />
+              </semantic-values>
+            </column>
+            <column caption='Vehicle Class' datatype='string' name='[Vehicle_Class]' role='dimension' type='nominal' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EV_Sales_Quantity]' derivation='Sum' name='[sum:EV_Sales_Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.185s98y0syth9z17ftlv60o01ni9].[Action (Vehicle Class)]'>
+            <groupfilter function='level-members' level='[Vehicle_Class]' user:ui-action-filter='[Action1_532385446C484FE281339E1CE59BA329]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.185s98y0syth9z17ftlv60o01ni9].[none:State:nk]'>
+            <groupfilter function='level-members' level='[none:State:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.185s98y0syth9z17ftlv60o01ni9].[none:State:nk]</column>
+            <column>[federated.185s98y0syth9z17ftlv60o01ni9].[Action (Vehicle Class)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.185s98y0syth9z17ftlv60o01ni9].[Longitude (generated)]' field-type='quantitative' max='12956658.774989491' min='5616286.9535265639' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.185s98y0syth9z17ftlv60o01ni9].[Latitude (generated)]' field-type='quantitative' max='4514624.3109756103' min='481452.78337696585' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' palette='blue_teal_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='background' value='false' />
+            <format attr='enabled' id='barrier_line-land-polygon' value='false' />
+            <format attr='enabled' id='barrier_line-land-line' value='false' />
+            <format attr='enabled' id='national_park' value='false' />
+            <format attr='enabled' id='pitch' value='false' />
+            <format attr='enabled' id='industrial' value='false' />
+            <format attr='enabled' id='built-up-area' value='false' />
+            <format attr='enabled' id='water' value='false' />
+            <format attr='enabled' id='waterway-river-canal' value='false' />
+            <format attr='enabled' id='aeroway-polygon' value='false' />
+            <format attr='enabled' id='aeroway-runway' value='false' />
+            <format attr='enabled' id='aeroway-taxiway' value='false' />
+            <format attr='enabled' id='parks' value='false' />
+            <format attr='enabled' id='landcover_wood' value='false' />
+            <format attr='enabled' id='landcover_scrub' value='false' />
+            <format attr='enabled' id='landcover_grass' value='false' />
+            <format attr='enabled' id='landcover_crop' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-bg-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents-bg' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents-bg' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-dispute-sub' value='false' />
+            <format attr='enabled' id='admin-0-boundaries-sub' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-supress' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-sm-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-md-parents' value='false' />
+            <format attr='enabled' id='admin-1-boundaries-lg-parents' value='false' />
+            <format attr='enabled' id='admin1-water-lines-usa-tableau' value='false' />
+            <format attr='enabled' id='9-dash-line-casing' value='false' />
+            <format attr='enabled' id='9-dash-line' value='false' />
+            <format attr='enabled' id='admin-1-label-9th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-8th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-7th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-6th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-1-label-1st-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-3rd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-2nd-tier' value='false' />
+            <format attr='enabled' id='us-admin-1-label-abbr-1st-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-5th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-4th-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-3rd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-2nd-tier' value='false' />
+            <format attr='enabled' id='admin-0-label-1st-tier' value='false' />
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='light' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+              <text column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+              <lod column='[federated.185s98y0syth9z17ftlv60o01ni9].[none:State:nk]' />
+              <lod column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+              <geometry column='[federated.185s98y0syth9z17ftlv60o01ni9].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='cell'>
+                <format attr='wrap' value='auto' />
+                <format attr='vertical-align' value='auto' />
+              </style-rule>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='user' />
+                <format attr='font-size' value='8' />
+                <format attr='color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='2.9944751262664795' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.185s98y0syth9z17ftlv60o01ni9].[Latitude (generated)]</rows>
+        <cols>[federated.185s98y0syth9z17ftlv60o01ni9].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{9008D4E3-5771-408B-9FC7-BF98E9044712}' />
+    </worksheet>
+    <worksheet name='Sales per Year'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EV_Dataset' name='federated.185s98y0syth9z17ftlv60o01ni9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185s98y0syth9z17ftlv60o01ni9'>
+            <column datatype='date' name='[Date]' role='dimension' type='quantitative' />
+            <column caption='EV Sales Quantity' datatype='real' name='[EV_Sales_Quantity]' role='measure' type='quantitative' />
+            <column-instance column='[EV_Sales_Quantity]' derivation='Sum' name='[sum:EV_Sales_Quantity:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Year' name='[yr:Date:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='width' field='[federated.185s98y0syth9z17ftlv60o01ni9].[yr:Date:ok]' value='43' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' palette='red_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='fill-above' id='refline0' value='#00000000' />
+            <format attr='fill-below' id='refline0' value='#00000000' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+              <text column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+              <style-rule element='pane'>
+                <format attr='minwidth' value='-1' />
+                <format attr='maxwidth' value='-1' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]</rows>
+        <cols>[federated.185s98y0syth9z17ftlv60o01ni9].[yr:Date:ok]</cols>
+      </table>
+      <simple-id uuid='{B734C880-177D-4B14-941C-AD5A60835A32}' />
+    </worksheet>
+    <worksheet name='Treemap Sales'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EV_Dataset' name='federated.185s98y0syth9z17ftlv60o01ni9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185s98y0syth9z17ftlv60o01ni9'>
+            <column caption='EV Sales Quantity' datatype='real' name='[EV_Sales_Quantity]' role='measure' type='quantitative' />
+            <column caption='Vehicle Category' datatype='string' name='[Vehicle_Category]' role='dimension' type='nominal' />
+            <column caption='Vehicle Class' datatype='string' name='[Vehicle_Class]' role='dimension' type='nominal' />
+            <column-instance column='[Vehicle_Category]' derivation='None' name='[none:Vehicle_Category:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Vehicle_Class]' derivation='None' name='[none:Vehicle_Class:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EV_Sales_Quantity]' derivation='Sum' name='[sum:EV_Sales_Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' palette='green_gold_10_0' type='interpolated' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+              <color column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+              <text column='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Category:nk]' />
+              <text column='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Class:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='8' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{51AE1C1A-CE0F-44C3-A08E-1AC11584C5D2}' />
+    </worksheet>
+    <worksheet name='Type Sold'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='EV_Dataset' name='federated.185s98y0syth9z17ftlv60o01ni9' />
+          </datasources>
+          <datasource-dependencies datasource='federated.185s98y0syth9z17ftlv60o01ni9'>
+            <column caption='EV Sales Quantity' datatype='real' name='[EV_Sales_Quantity]' role='measure' type='quantitative' />
+            <column caption='Vehicle Class' datatype='string' name='[Vehicle_Class]' role='dimension' type='nominal' />
+            <column caption='Vehicle Type' datatype='string' name='[Vehicle_Type]' role='dimension' type='nominal' />
+            <column-instance column='[Vehicle_Type]' derivation='None' name='[none:Vehicle_Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[EV_Sales_Quantity]' derivation='Sum' name='[sum:EV_Sales_Quantity:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.185s98y0syth9z17ftlv60o01ni9].[Action (Vehicle Class)]'>
+            <groupfilter function='level-members' level='[Vehicle_Class]' user:ui-action-filter='[Action1_532385446C484FE281339E1CE59BA329]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Type:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Vehicle_Type:nk]' />
+              <groupfilter function='member' level='[none:Vehicle_Type:nk]' member='&quot;Institution Bus&quot;' />
+            </groupfilter>
+          </filter>
+          <computed-sort column='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Type:nk]' direction='DESC' using='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+          <slices>
+            <column>[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Type:nk]</column>
+            <column>[federated.185s98y0syth9z17ftlv60o01ni9].[Action (Vehicle Class)]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' palette='red_10_0' type='interpolated' />
+            <encoding attr='size-bar' field='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+              <text column='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Type:nk]</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{F2C41A96-A6EB-4F16-A1B4-2B62A447D500}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98170' id='37' param='horz' type-v2='layout-flow' w='99064' x='468' y='915'>
+            <zone h='98170' id='34' param='horz' type-v2='layout-flow' w='89702' x='468' y='915'>
+              <zone h='98170' id='30' param='horz' type-v2='layout-flow' w='89702' x='468' y='915'>
+                <zone h='98170' id='27' param='horz' type-v2='layout-flow' w='89702' x='468' y='915'>
+                  <zone h='98170' id='24' param='horz' type-v2='layout-flow' w='89702' x='468' y='915'>
+                    <zone h='98170' id='10' param='horz' type-v2='layout-flow' w='89702' x='468' y='915'>
+                      <zone h='98170' id='7' param='horz' type-v2='layout-flow' w='89702' x='468' y='915'>
+                        <zone h='98170' id='5' type-v2='layout-basic' w='89702' x='468' y='915'>
+                          <zone h='49085' id='14' name='Sales map' w='44851' x='468' y='50000'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='49085' id='22' name='Class Sold' w='18650' x='31782' y='915'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='49085' id='28' name='Category Sold' w='31314' x='468' y='915'>
+                            <layout-cache fixed-size-h='195' has-max-size-w='true' maxwidth='589' minwidth='589' type-h='fixed' type-w='scalable' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='49085' id='32' name='Type Sold' w='39738' x='50432' y='915'>
+                            <layout-cache fixed-size-h='301' fixed-size-w='162' type-h='fixed' type-w='fixed' />
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                          <zone h='49085' id='35' name='Sales category' w='44851' x='45319' y='50000'>
+                            <zone-style>
+                              <format attr='border-color' value='#000000' />
+                              <format attr='border-style' value='none' />
+                              <format attr='border-width' value='0' />
+                              <format attr='margin' value='4' />
+                            </zone-style>
+                          </zone>
+                        </zone>
+                      </zone>
+                    </zone>
+                  </zone>
+                </zone>
+              </zone>
+            </zone>
+            <zone fixed-size='160' h='98170' id='36' is-fixed='true' param='vert' type-v2='layout-flow' w='9362' x='90170' y='915'>
+              <zone h='14416' id='38' name='Sales category' pane-specification-id='0' param='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Category:nk]' type-v2='color' w='9362' x='90170' y='915'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='2100' minheight='2100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='21' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='20' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000'>
+                <zone fixed-size='254' h='32723' id='14' is-fixed='true' name='Sales map' w='44851' x='45319' y='66362'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{A7CD6F8B-8653-469C-B604-A3E7B62A581C}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Class Sold'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{11E57C10-80B1-4853-898D-4DF5707D1A1B}' />
+    </window>
+    <window class='worksheet' name='Category Sold'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Class:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D6EC9C84-842B-4933-AE32-BB70FB6F5890}' />
+    </window>
+    <window class='worksheet' name='Type Sold'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{F0CD52C1-C4FD-4872-979C-1CA5033D7BF5}' />
+    </window>
+    <window class='worksheet' name='Sales map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <default-map-tool-selection tool='2' />
+      </viewpoint>
+      <simple-id uuid='{B016B391-CAD3-4356-9D06-6235475E017F}' />
+    </window>
+    <window class='worksheet' maximized='true' name='Sales category'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Vehicle_Category:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D69C157C-DC9A-4111-93FB-40073057D37D}' />
+    </window>
+    <window class='worksheet' name='Sales per Year'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{C9CADF57-CC40-4A54-AD84-6360ED995A39}' />
+    </window>
+    <window class='worksheet' name='Treemap Sales'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.185s98y0syth9z17ftlv60o01ni9].[sum:EV_Sales_Quantity:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{20245541-FB39-4D53-87F3-0924736586F6}' />
+    </window>
+    <window class='worksheet' name='Sales Forecast'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.185s98y0syth9z17ftlv60o01ni9].[none:Forecast Indicator:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{85B3E879-D252-4559-AFFF-9AC8C066FF60}' />
+    </window>
+    <window class='dashboard' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='Category Sold' />
+        <viewpoint name='Class Sold' />
+        <viewpoint name='Sales category'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Sales map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Type Sold' />
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{D11CEAB4-7C13-4A36-9D14-9C36F597B625}' />
+    </window>
+  </windows>
+</workbook>
