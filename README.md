@@ -1,1 +1,1 @@
-Hi there! I'm Martin Macchi, an aspiring data analyst with a passion for learning and growing in the world of data. As I develop my skills and explore various techniques in data analysis, I'm excited to dive deeper into the field with the potential to become a data scientist. Join me on this journey as I uncover insights and make data-driven decisions along the way!
+Hi there! I'm Martin Macchi, an aspiring data analyst with a passion for learning and growing in the world of data. Join me on this journey as I uncover insights and make data-driven decisions along the way!
